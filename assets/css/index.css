@@ -1,0 +1,121 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: white;
+    -webkit-box-shadow:  0 0 10px grey;
+    -moz-box-shadow:  0 0 10px grey;
+    box-shadow:  0 0 10px grey;
+    float: left;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 20%;
+}
+
+nav > div {
+    color: gray;
+    font-size: 12px;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+nav > h1 {
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
+}
+
+nav > ol {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ol > li {
+    align-items: center;
+    display: flex;
+    height: 30px;
+    padding: 30px 30px 30px 20px;
+}
+
+nav > ol > li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav > ol > li:hover {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+nav > ol > li.active {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+div.page {
+    float: right;
+    width: 79vw;
+}
+
+div.page#page-home {
+    align-items: center;
+    background-image: url(../images/background.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    height: 100vh;
+    justify-content: center;
+    text-shadow: 0 0 5px grey;
+}
+
+div.page#page-home > div {
+    text-align: center;
+}
+
+div.page#page-order {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+div.page#page-order form input, div.page#page-order form select {
+    margin: 10px;
+    padding: 15px;
+    width: 50%;
+}
+
+div.page#page-order form input[type="file"], div.page#page-order form input[type="checkbox"], div.page#page-order form select {
+    width: 40%;
+}
+
+div.page#page-order form hr {
+    width: 20%;
+}
+
+div.page#page-order form input[type=submit] {
+    background-color: yellow;
+    border: none;
+    -webkit-transition: box-shadow 0.5s;
+    -moz-transition: box-shadow 0.5s;
+    -ms-transition: box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+
+div.page#page-order form input[type=submit]:hover {
+    -webkit-box-shadow:  0 0 5px grey;
+    -moz-box-shadow:  0 0 5px grey;
+    box-shadow:  0 0 5px grey;
+    cursor: pointer;
+}

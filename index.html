@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <title>Inked Out</title>
+    </head>
+    <body>
+        <nav>
+            <h1>Inked Out</h1>
+            <ol>
+                <li data-target="#page-home" class="active nav-link">Home</li>
+                <li data-target="#page-order" id="order-link" class="nav-link">Order</li>
+            </ol>
+            <div>
+                <p>Want to get in contact?</p>
+                <a href="mailto:inkedout.lynbrook@gmail.com">inkedout.lynbrook@gmail.com</a>
+            </div>
+        </nav>
+        <div class="page" id="page-home">
+            <div>
+                <h1>Inked Out</h1>
+                <h2>Your Design, Our Priority</h2>
+            </div>
+        </div>
+        <div class="page" id="page-order">
+            <form method="post">
+                <h3>Contact</h3>
+                <input required name="name" type="text" placeholder="Name">
+                <input required name="email" type="email" placeholder="Email">
+                <input required name="phone" type="tel" placeholder="Phone Number">
+                <hr>
+                <h3>Order</h3>
+                <label for="file">Image File<input required id="file" name="file" type="file"></label>
+                <br>
+                <label for="paper-type">Paper Type</label>
+                <select name="paper" id="paper-type">
+                    <option selected value="regular">Regular</option>
+                    <option value="bond">Bond</option>
+                    <option value="vinyl-adhesive">Vinyl Adhesive</option>
+                    <option value="photo">Photo</option>
+                    <option value="sticker">Sticker</option>
+                </select>
+                <input required min="1" name="height" placeholder="Height (in)" type="number">
+                <input required min="1" name="width" placeholder="Width (in)" type="number">
+                <input required min="1" placeholder="Quantity" type="number" value="1">
+                <br>
+                <label for="grommets">Grommets</label>
+                <select name="grommets" id="grommets">
+                    <option value="yes">Yes</option>
+                    <option selected value="no">No</option>
+                </select>
+                <hr>
+                <h3>Details</h3>
+                <input placeholder="Promotion Code" name="promo-code" type="text">
+                <input required placeholder="Date Required By" type="date">
+                <input value="Order" type="submit">
+            </form>
+        </div>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>
